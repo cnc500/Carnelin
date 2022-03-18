@@ -1,3 +1,9 @@
+:root {
+    --body-fonts:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --white: #ffffff;
+    --twenty: 20px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,10 +15,10 @@ body {
 }
 
 .header {
-    padding: 20px;
+    padding: var(--twenty);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .header h1 {
@@ -26,10 +32,10 @@ body {
 
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: var(--twenty);
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: var(--body-fonts);
+    font-size: var(--twenty);
 }
 
 .header nav ul li {
@@ -38,7 +44,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -68,23 +74,23 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: var(--twenty);
 }
 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: var(--twenty);
+    padding: var(--twenty);
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--body-fonts);
     background-color: #2589bd;
 }
 
 .benefit-box {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .benefit-box h3 {
@@ -99,12 +105,12 @@ p {
 }
 
 .search-online-social {
-    margin-bottom: 20px;
+    margin-bottom: var(--twenty);
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .search-online-social img {
@@ -112,7 +118,7 @@ p {
 }
 
 .search-online-social h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--twenty);
     font-size: 36px;
 }
 
@@ -124,5 +130,5 @@ p {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: var(--twenty);
 }
